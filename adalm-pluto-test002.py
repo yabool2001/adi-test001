@@ -10,12 +10,11 @@ from scipy import signal
 import time
 
 # Create radio
-sdr = adi.Pluto ( uri = "usb:2.6.5" )
+sdr = adi.Pluto ( uri = "usb:2.16.5" )
 
 # Configure properties
 sdr.rx_rf_bandwidth = 4000000
-sdr.rx_lo = 2000000000
-sdr.tx_lo = 2000000000
+sdr.tx_lo = int ( 70e6 )
 sdr.tx_cyclic_buffer = True
 sdr.tx_hardwaregain_chan0 = -30
 sdr.gain_control_mode_chan0 = "slow_attack"

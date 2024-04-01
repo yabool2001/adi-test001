@@ -1,12 +1,15 @@
 # 2024.03.23
 # Source: https://wiki.analog.com/resources/tools-software/linux-software/pyadi-iio
-# check address of the Pluto device "iio_info -s"
+# Check address of the Pluto device: iio_info -s
+# Full info about device: iio_info -u ip:192.168.2.1 or iio_info -u usb:2.14.5
+# Check the firmware version: iio_attr -u usb:2.14.5 -C fw_version
+# List devices in an IIO context: iio_attr -u usb:2.14.5 -d
 
 import adi
 import time
 
 # Create radio object
-sdr = adi.Pluto ( uri = "usb:2.6.5" )
+sdr = adi.Pluto ( uri = "usb:2.13.5" )
 # sdr = adi.Pluto ('ip:192.168.2.1' )
 print ( sdr )
 
