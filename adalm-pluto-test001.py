@@ -1,4 +1,6 @@
 # 2024.03.23
+# install libiio-<version>-setup.exe from https://github.com/analogdevicesinc/libiio/releases
+# install python module python -m pip install pyadi-iio
 # Source: https://wiki.analog.com/resources/tools-software/linux-software/pyadi-iio
 # Check address of the Pluto device: iio_info -s
 # Full info about device: iio_info -u ip:192.168.2.1 or iio_info -u usb:2.14.5
