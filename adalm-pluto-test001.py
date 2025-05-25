@@ -11,7 +11,7 @@ import adi
 import time
 
 # Create radio object
-sdr = adi.Pluto ( uri = "usb:2.13.5" )
+sdr = adi.Pluto ( uri = "usb:" )
 # sdr = adi.Pluto ('ip:192.168.2.1' )
 print ( sdr )
 

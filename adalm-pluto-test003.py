@@ -7,7 +7,7 @@ sample_rate = 1e6 # Hz
 center_freq = 70e6 # Hz
 num_samps = 10000 # number of samples returned per call to rx()
 
-sdr = adi.Pluto ( uri = "usb:2.16.5" )
+sdr = adi.Pluto ( uri = "usb:" )
 
 sdr.gain_control_mode_chan0 = "slow_attack"
 sdr.rx_lo = int ( center_freq )

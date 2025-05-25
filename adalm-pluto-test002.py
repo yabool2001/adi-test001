@@ -10,7 +10,7 @@ from scipy import signal
 import time
 
 # Create radio
-sdr = adi.Pluto ( uri = "usb:2.16.5" )
+sdr = adi.Pluto ( uri = "usb:" )
 
 # Configure properties
 sdr.rx_rf_bandwidth = 4000000
